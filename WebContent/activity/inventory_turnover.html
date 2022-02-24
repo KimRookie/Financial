@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/Financial/mycss.css">
+</head>
+<body>
+	<h1>재무관리 System &nbsp;<a href="/Financial/Home.html"><img src="/Financial/home.jpg" width="40" height="40"></a></h1>
+	<hr width="80%">
+	<div class="area">
+	<a href="/Financial/liquidity_ratio.html"><input type="submit" value="유동성비율" class="item"></a>
+	<a href="/Financial/leverage_ratio.html"><input type="submit" value="레버리지비율" class="item"></a>
+	<a href="/Financial/stability_ratio.html"><input type="submit" value="안정성비율" class="item"></a>
+	<a href="/Financial/profitability_ratio.html"><input type="submit"	value="수익성비율" class="item"></a>
+	<a href="/Financial/activity_ratio.html"><input type="submit" value="활동성비율" class="item"></a>
+	<a href="/Financial/growth_ratio.html"><input type="submit" value="성장성비율" class="item"></a>
+	</div>
+	<br><br>
+	<table>
+		<tr>
+			<td>
+			<a href="total_assets_turnover.html" class="detail">총자산회전율</a>
+			</td>
+			<td rowspan="8">
+			<h2>
+				<form action="InventoryTurnover.jsp" method="post">
+					매출액: <input type="text" name="sales" required><br>
+					<br>당기재고자산: <input type="text" name="Ownequity" required><br>
+					<br> 전기재고자산: <input type="text" name="Ownequity2" required>
+					<input type="submit" value="계산">
+				</form>
+			</h2>
+			</td>
+		<tr>
+			<td>
+			<a href="inventory_turnover.html" class="detail">재고자산회전율</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="inventory_turnover_period.html" class="detail">재고자산회전기간</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="payables_turnover.html" class="detail">매출채권회전율</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="payables_turnover_period.html" class="detail">매출채권회전기간</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="receivables_turnover.html" class="detail">매입채무회전율</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="receivables_turnover_period.html" class="detail">매입채무평균회수기간</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="one_rotation_period.html" class="detail">1회전 운전기간</a>
+			</td>
+		</tr>		
+	</table>
+
+</body>
+</html>

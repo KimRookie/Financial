@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/Financial/mycss.css">
+</head>
+<body>
+	<h1>재무관리 System &nbsp;<a href="/Financial/Home.html"><img src="/Financial/home.jpg" width="40" height="40"></a></h1>
+	<hr width="80%">
+	<div class="area">
+		<a href="/Financial/liquidity_ratio.html"><input type="submit"
+			value="유동성비율" class="item"></a> <a
+			href="/Financial/leverage_ratio.html"><input type="submit"
+			value="레버리지비율" class="item"></a> <a
+			href="/Financial/stability_ratio.html"><input type="submit"
+			value="안정성비율" class="item"></a> <a
+			href="/Financial/profitability_ratio.html"><input type="submit"
+			value="수익성비율" class="item"></a> <a
+			href="/Financial/activity_ratio.html"><input type="submit"
+			value="활동성비율" class="item"></a> <a
+			href="/Financial/growth_ratio.html"><input type="submit"
+			value="성장성비율" class="item"></a>
+	</div>
+	<br>
+	<br>
+	<table>
+		<tr>
+			<td>
+			<a href="current_ratio.html" class="detail">유동비율</a>
+			</td>
+		<tr>
+			<td>
+			<a href="quick_ratio.html" class="detail">당좌비율</a>
+			</td>
+		</tr>		
+	</table>
+	
+			<h2>
+				<form action="current_result.jsp" method="post">
+					유동자산: <input type="text" name="assets" required><br>
+					<br> 유동부채: <input type="text" name="liability" required>
+					<input type="submit" value="계산">
+				</form>
+			</h2>
+</body>
+</html>
